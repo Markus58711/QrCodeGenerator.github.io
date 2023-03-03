@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -23,7 +23,7 @@ body{
   color: #fff;
   background: white;
 }
-.wrapper{
+.sometext{
   height: 265px;
   max-width: 410px;
   background:lightgray;
@@ -32,7 +32,7 @@ body{
   transition: height 0.2s ease;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1)
 }
-.wrapper.active{
+.sometext.active{
   height: 530px;
 }
 header h1{
@@ -44,7 +44,7 @@ header p{
   color: #575757;
   font-size: 16px;
 }
-.wrapper .form{
+.sometext .form{
   margin: 20px 0 25px;
 }
 .form :where(input, button){
@@ -83,7 +83,7 @@ header p{
   justify-content: center;
   border: 1px solid #ccc;
 }
-.wrapper.active .qr-code{
+.sometext.active .qr-code{
   opacity: 1;
   pointer-events: auto;
   transition: opacity 0.5s 0.05s ease;
@@ -97,13 +97,44 @@ header p{
   height: 200px;
 
 }
+nav {
+  background-color:none;
+  height: 30px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  font-size: 17px;
+}
+
+a:hover {
+  background-color: skyblue;
+}
 
 @media (max-width: 430px){
-  .wrapper{
+  .sometext{
     height: 255px;
     padding: 16px 20px;
   }
-  .wrapper.active{
+  .sometext.active{
     height: 510px;
   }
   header p{
